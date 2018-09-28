@@ -123,7 +123,7 @@ def processHotelList(filename):
 # This function calls the google translate api and 
 # returns the translated description 
 def getTranslatedDescription(source,target,q):
-  service = build('translate', 'v2', developerKey='AIzaSyAF61BG5Fgp6q3PaKcuxqkEv3Aa1_jlI6Q')
+  service = build('translate', 'v2', developerKey='XXXXXXXXXXXXXXXX')
   response = service.translations().list(source=source, target=target, q=q).execute()
   return response['translations'][0]['translatedText']
 
